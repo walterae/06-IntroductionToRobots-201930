@@ -23,7 +23,7 @@ def main():
     # DONE: 2. Construct a RoseBot.  Send it as an argument to other functions.
     robot = rb.RoseBot()
     #run_test_spin(robot)
-    run_test_go(robot)
+    #run_test_go(robot)
     challenge1(robot)
     challenge2(robot)
 
@@ -83,7 +83,7 @@ def run_test_go(robot):
     time.sleep(2)
     go(robot,5,50,40) #Turn Left
     time.sleep(2)
-    go(robot,5, -40, -40)
+    go(robot,5, -40, -40) #Backwards
 
 
 def go(robot, seconds, left_wheel_speed, right_wheel_speed):
@@ -103,6 +103,15 @@ def go(robot, seconds, left_wheel_speed, right_wheel_speed):
 
 def challenge1(robot):
     """ Your instructor will tell you this challenge. """
+    go(robot,3,50,40) #Left
+    time.sleep(2)
+    go(robot,4,40,60) #Right
+    time.sleep(2)
+    # go(robot,3,50,40) #Left
+    # time.sleep(2)
+    # go(robot,3,50,40) #Right
+    # time.sleep(2)
+
 
 
 def challenge2(robot):
